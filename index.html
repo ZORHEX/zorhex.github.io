@@ -5,7 +5,27 @@
 <title>FREE FIRE | ZORHEX</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
+<style/* Fire glow animation */
+@keyframes fireGlow {
+    0% {
+        box-shadow:
+        0 0 10px #ff4500,
+        0 0 20px #ff6a00,
+        0 0 30px #ff0000;
+    }
+    50% {
+        box-shadow:
+        0 0 20px #ff0000,
+        0 0 40px #ff8c00,
+        0 0 60px #ff4500;
+    }
+    100% {
+        box-shadow:
+        0 0 10px #ff4500,
+        0 0 20px #ff6a00,
+        0 0 30px #ff0000;
+    }
+}>
 body{
     margin:0;
     height:100vh;
@@ -118,3 +138,30 @@ body{
 border-top:6px solid red;
     <h2>Loading Free Fire...</h2>
     }, 3000); // 3 seconds
+    .card{
+    background: rgba(0,0,0,0.75);
+    border:2px solid orange;
+    padding:30px;
+    border-radius:18px;
+    text-align:center;
+    width:85%;
+    max-width:420px;
+    }
+    animation: fireGlow 1.5s infinite alternate;
+    .card{
+    background: rgba(0,0,0,0.75);
+    border:2px solid orange;
+    padding:30px;
+    border-radius:18px;
+    text-align:center;
+    width:85%;
+    max-width:420px;
+
+    animation: fireGlow 1.5s infinite alternate;
+    }
+
+    animation: fireGlow 1s infinite alternate;
+    animation: fireGlow 2.5s infinite alternate;
+    0 0 20px red,
+0 0 40px darkred;
+    
