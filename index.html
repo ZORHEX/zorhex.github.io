@@ -5,65 +5,21 @@
 <title>FREE FIRE | ZORHEX</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style/* Fire glow animation */
-@keyframes fireGlow {
-    0% {
-        box-shadow:
-        0 0 10px #ff4500,
-        0 0 20px #ff6a00,
-        0 0 30px #ff0000;
-    }
-    50% {
-        box-shadow:
-        0 0 20px #ff0000,
-        0 0 40px #ff8c00,
-        0 0 60px #ff4500;
-    }
-    100% {
-        box-shadow:
-        0 0 10px #ff4500,
-        0 0 20px #ff6a00,
-        0 0 30px #ff0000;
-    }
-}>
+<style>
+/* ===== BODY BACKGROUND ===== */
 body{
     margin:0;
     height:100vh;
-    background: url("f2591c6471fb70951ab4d916259000f6.jpg") no-repeat center center fixed;
-    background-size: cover;
+    background:url("f2591c6471fb70951ab4d916259000f6.jpg") no-repeat center center fixed;
+    background-size:cover;
     display:flex;
     justify-content:center;
     align-items:center;
     font-family:Arial, sans-serif;
+    overflow:hidden;
 }
 
-.card{
-    background:rgba(0,0,0,0.75);
-    border:2px solid orange;
-    padding:30px;
-    border-radius:18px;
-    text-align:center;
-    box-shadow:0 0 35px orange;
-    width:85%;
-    max-width:420px;
-}
-
-h1{ color:orange; letter-spacing:2px; }
-
-.stat{ color:orange; margin:10px 0; font-size:18px; }
-
-button{
-    margin-top:20px;
-    padding:12px 28px;
-    border:none;
-    border-radius:25px;
-    background:linear-gradient(90deg,orange,orangered);
-    font-size:16px;
-    font-weight:bold;
-}
-
-.footer{ margin-top:15px; font-size:12px; color:orange; opacity:.6; }
-</style/* Loader screen */
+/* ===== LOADER ===== */
 #loader{
     position:fixed;
     top:0;
@@ -77,91 +33,102 @@ button{
     flex-direction:column;
     z-index:9999;
     color:orange;
-    font-family:Arial, sans-serif;
 }
-
-/* Spinner */
 .spinner{
     width:60px;
     height:60px;
     border:6px solid rgba(255,165,0,0.3);
     border-top:6px solid orange;
     border-radius:50%;
-    animation: spin 1s linear infinite;
+    animation:spin 1s linear infinite;
     margin-bottom:15px;
 }
-
 @keyframes spin{
-    from{ transform:rotate(0deg); }
-    to{ transform:rotate(360deg); }
-}>
+    to{transform:rotate(360deg);}
+}
+
+/* ===== FIRE GLOW ANIMATION ===== */
+@keyframes fireGlow{
+    0%{
+        box-shadow:0 0 15px #ff4500,0 0 30px #ff6a00;
+    }
+    50%{
+        box-shadow:0 0 30px #ff0000,0 0 60px #ff8c00;
+    }
+    100%{
+        box-shadow:0 0 15px #ff4500,0 0 30px #ff6a00;
+    }
+}
+
+/* ===== CARD ===== */
+.card{
+    background:rgba(0,0,0,0.75);
+    border:2px solid orange;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    width:85%;
+    max-width:420px;
+    animation:fireGlow 1.5s infinite alternate;
+}
+
+/* ===== TEXT ===== */
+h1{
+    color:orange;
+    letter-spacing:2px;
+}
+.stat{
+    color:orange;
+    margin:10px 0;
+    font-size:18px;
+}
+
+/* ===== BUTTON ===== */
+button{
+    margin-top:20px;
+    padding:12px 30px;
+    border:none;
+    border-radius:30px;
+    background:linear-gradient(90deg,orange,orangered);
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+.footer{
+    margin-top:15px;
+    font-size:12px;
+    color:orange;
+    opacity:.6;
+}
+</style>
 </head>
 
 <body>
-<div cla<div id="loader">
+
+<!-- LOADING SCREEN -->
+<div id="loader">
     <div class="spinner"></div>
     <h2>Loading ZORHEX...</h2>
-</div>ss="card">
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="card">
     <h1>🔥 FREE FIRE 🔥</h1>
     <div class="stat">⚡ Rusher</div>
     <div class="stat">🎯 Headshot King</div>
     <div class="stat">👑 BOOYAH Master</div>
-    <a href="about.html">
-  <button>ENTER BATTLE</button>
-    </a>
+    <button>ENTER BATTLE</button>
     <div class="footer">Hosted by ZORHEX</div>
-</div><script>
-window.addEventListener("load", function(){
+</div>
+
+<!-- LOADER SCRIPT -->
+<script>
+window.addEventListener("load",function(){
     setTimeout(function(){
-        document.getElementById("loader").style.display = "none";
-    }, 2000); // 2 seconds
+        document.getElementById("loader").style.display="none";
+    },2000);
 });
 </script>
+
 </body>
 </html>
-.box{
-    background: rgba(0,0,0,0.75);
-    border:2px solid orange;
-    padding:30px;
-    border-radius:18px;
-    text-align:center;
-    box-shadow:0 0 30px orange;
-    color:orange;
-
-    /* animation */
-    animation: fadeSlide 1s ease-out;
-}
-body{
-    animation: fadeSlide 1s ease-out;
-}
-    color: red;
-border-top:6px solid red;
-    <h2>Loading Free Fire...</h2>
-    }, 3000); // 3 seconds
-    .card{
-    background: rgba(0,0,0,0.75);
-    border:2px solid orange;
-    padding:30px;
-    border-radius:18px;
-    text-align:center;
-    width:85%;
-    max-width:420px;
-    }
-    animation: fireGlow 1.5s infinite alternate;
-    .card{
-    background: rgba(0,0,0,0.75);
-    border:2px solid orange;
-    padding:30px;
-    border-radius:18px;
-    text-align:center;
-    width:85%;
-    max-width:420px;
-
-    animation: fireGlow 1.5s infinite alternate;
-    }
-
-    animation: fireGlow 1s infinite alternate;
-    animation: fireGlow 2.5s infinite alternate;
-    0 0 20px red,
-0 0 40px darkred;
-    
